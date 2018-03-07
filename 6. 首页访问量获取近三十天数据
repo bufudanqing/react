@@ -1,0 +1,63 @@
+参考：
+http://www.jb51.net/article/110902.htm
+JavaScript Date对象
+创建Date()对象   new Date()
+var d = new Date();
+var d = new Date(milliseconds);
+var d = new Date(dateString);
+var d = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+Date()对象的属性：：：
+
+Date 对象属性
+属性	描述
+constructor	返回对创建此对象的 Date 函数的引用。
+prototype	使您有能力向对象添加属性和方法。
+
+Date()对象的方法：：：
+getDate()	从 Date 对象返回一个月中的某一天 (1 ~ 31)。
+getDay()	从 Date 对象返回一周中的某一天 (0 ~ 6)。
+getFullYear()	从 Date 对象以四位数字返回年份。
+getHours()	返回 Date 对象的小时 (0 ~ 23)。
+getMilliseconds()	返回 Date 对象的毫秒(0 ~ 999)。
+getMinutes()	返回 Date 对象的分钟 (0 ~ 59)。
+getMonth()	从 Date 对象返回月份 (0 ~ 11)。
+getSeconds()	返回 Date 对象的秒数 (0 ~ 59)。
+=============
+setDate()	设置 Date 对象中月的某一天 (1 ~ 31)。
+setFullYear()	设置 Date 对象中的年份（四位数字）。
+setHours()	设置 Date 对象中的小时 (0 ~ 23)。
+setMilliseconds()	设置 Date 对象中的毫秒 (0 ~ 999)。
+setMinutes()	设置 Date 对象中的分钟 (0 ~ 59)。
+setMonth()	设置 Date 对象中月份 (0 ~ 11)。
+setSeconds()	设置 Date 对象中的秒钟 (0 ~ 59)。
+setTime()	setTime() 方法以毫秒设置 Date 对象。
+===================
+toDateString()	把 Date 对象的日期部分转换为字符串。
+toJSON()	以 JSON 数据格式返回日期字符串。
+toLocaleDateString()	根据本地时间格式，把 Date 对象的日期部分转换为字符串。
+toLocaleTimeString()	根据本地时间格式，把 Date 对象的时间部分转换为字符串。
+toLocaleString()	据本地时间格式，把 Date 对象转换为字符串。
+toString()	把 Date 对象转换为字符串。
+toTimeString()	把 Date 对象的时间部分转换为字符串。
+=============
+valueOf()	返回 Date 对象的原始值。
+==============
+用到的js方法：
+Date.setDate(day)
+day：必需
+表示一个月中的一天的一个数值（1 ~ 31）:
+
+0 为上一个月的最后一天
+-1 为上一个月最后一天之前的一天
+如果当月有 31 天:
+
+32 为下个月的第一天
+如果当月有 30 天:
+
+32 为下一个月的第二天
+====
+var d = new Date();
+d.setDate(0);
+d 输出结果:
+
+Wed Feb 28 2018 10:50:53 GMT+0800 (中国标准时间)
