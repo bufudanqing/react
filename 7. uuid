@@ -1,0 +1,14 @@
+unique identifier 惟一标识符        -->> uid
+
+在项目开发中我们常需要给某些数据定义一个唯一标识符，便于寻找，关联。
+
+使用起来很简单，两种：
+
+1、uuid.v1(); -->基于时间戳生成  （time-based）
+
+2、uuid.v4(); -->随机生成  (random)
+
+通常我们使用基于时间戳  v1()  生成的UID，随机生成  v4()  还是有一定几率重复的。
+eg:
+    var UUID = require('uuid');
+    var ID = UUID.v1();
