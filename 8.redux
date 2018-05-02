@@ -1,0 +1,4 @@
+
+redux不用说了，我是把它当成一个本地数据库使用，react-redux帮助你完成数据订阅，redux-thunk可以放你实现异步action，redux-logger是redux的日志中间件。
+
+无论代码怎么布局，使用redux的方法主要还是三步曲：创建store、创建action、创建reducer。而在这之后才是与业务或者组件相关的数据处理和展示。
